@@ -27,8 +27,7 @@ private:
 public:
     pokemon() = default;
     pokemon(string poke_name, int poke_hpValue, int poke_atkValue) : name(poke_name), hpValue(poke_hpValue), atkValue(poke_atkValue){};
-
-    pokemon(const pokemon &poke) : name(poke.name), hpValue(poke.hpValue), atkValue(poke.atkValue) {}
+    pokemon(const pokemon &poke) : name(poke.name), hpValue(poke.hpValue), atkValue(poke.atkValue) {};
 
     string get_pokemon_name() const { return this->name; }
     int get_hpValue() { return this->hpValue; }
